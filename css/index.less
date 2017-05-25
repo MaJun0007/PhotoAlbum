@@ -23,12 +23,18 @@ html,body{
   left: 0;
   bottom: 0;
   overflow: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 ul.pics{
   margin: 0;
   padding: 0;
   list-style:none;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 ul.pics li{
   width:7rem;

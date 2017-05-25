@@ -121,7 +121,7 @@ function mscroll(wrap,callBack) {
 	wrap.addEventListener(
 		'touchend', 
 		function (){
-			var speed = (lastDis/lastTimeDis)*120; 
+			var speed = (lastDis/lastTimeDis)*220;
 			speed = isNaN(speed)?0:speed;
 			var t = cssTransform(child,"translateY");
 			var target = t + speed; 
